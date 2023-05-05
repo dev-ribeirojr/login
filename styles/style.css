@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap');
+
+:root{
+    --font-titulo:  'Merriweather', serif;
+    --font-padrao: 'Lato', sans-serif;
+    --cor01: #04c35c;
+    --cor02: #2b6cb0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.area-img{
+    display: none;
+}
+.container{
+    height: 100%;
+
+    width: 420px;
+    max-width: 100%;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container header{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.container header p{
+    font-family: var(--font-titulo);
+    margin-bottom: 8px;
+}
+.container header h1{
+    font-family: var(--font-titulo);
+    margin-bottom: 40px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-padrao);
+    width: 90%;
+}
+.form label{
+    margin: 11px 0;
+    cursor: pointer;
+}
+.form input{
+
+    height: 45px;
+    border: 1px solid #b8b8b8;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 10px;
+    outline: none;
+
+}
+.opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.opcoes label{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.opcoes a{
+    text-decoration: none;
+    color: var(--cor02);
+    transition:  all 0.5s;
+}
+.opcoes a:hover{
+    text-decoration: underline;
+}
+.container button{
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+    transition: all 0.5s;
+}
+.btn-entrar{
+    background-color: var(--cor01);
+    
+}
+.btn-entrar:hover{
+    background-color: #019e4a;
+}
+.btn-entrar-google{
+    background-color: #1a202c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-entrar-google:hover{
+    background-color: #0b0d11;
+}
+.nova-conta{
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: var(--font-padrao);
+    text-align: center;
+}
+.nova-conta a{
+    text-decoration: none;
+    color: var(--cor02);
+    margin-left: 4px;
+    transition: all 0.5s;
+}
+.nova-conta a:hover{
+    text-decoration: underline;
+}
